@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>但以理團2027新年營</title>
+    <meta name="description" content="宣道會基蔭堂但以理團 2027年1月1日至3日新年營。地點薄扶林傷健營。費用待定。">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#FFFCF6">
+    <meta property="og:title" content="但以理團2027新年營">
+    <meta property="og:description" content="宣道會基蔭堂但以理團 · 2027年1月1日至3日 · 薄扶林傷健營 · 費用待定">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_HK">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bg-color: #FFFCF6;
+            --border-color: #3E3A39;
+            --pink: #F2A497;
+            --yellow: #F6D27A;
+            --blue: #A8D3E6;
+            --green: #B9DAA5;
+            --border-width: 3px;
+            --border-radius: 20px;
+            --nav-offset: 6.75rem;
+        }
+        @media (min-width: 640px) {
+            :root { --nav-offset: 4.5rem; }
+        }
+
+        body {
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--border-color);
+            line-height: 1.6;
+        }
+
+        section { scroll-margin-top: calc(var(--nav-offset) + 0.35rem); }
+
+        .pb-card {
+            background-color: white;
+            border: var(--border-width) solid var(--border-color);
+            border-radius: var(--border-radius);
+            box-shadow: 6px 6px 0px var(--border-color);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.2s;
+        }
+        .pb-card.flush { padding: 0; overflow: hidden; }
+        .pb-card:hover { transform: translateY(-2px); }
+
+        .pb-btn {
+            border: var(--border-width) solid var(--border-color);
+            border-radius: 9999px;
+            font-weight: 700;
+            box-shadow: 3px 3px 0px var(--border-color);
+            transition: all 0.1s;
+            color: var(--border-color);
+            text-decoration: none;
+            min-height: 2.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pb-btn:active, .pb-btn.is-pressed {
+            box-shadow: 0px 0px 0px var(--border-color);
+            transform: translate(3px, 3px);
+        }
+
+        .pb-tag {
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.875rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+        .tag-pink { background-color: var(--pink); }
+        .tag-yellow { background-color: var(--yellow); }
+        .tag-blue { background-color: var(--blue); }
+        .tag-green { background-color: var(--green); }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+
+        @keyframes bounce-in {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.02); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-bounce-in {
+            animation: bounce-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .day-tabs {
+            position: sticky;
+            top: var(--nav-offset);
+            z-index: 40;
+            background: var(--bg-color);
+            padding: 0.35rem 0 0.75rem;
+        }
+
+        .soft-box {
+            background: var(--bg-color);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 0.85rem 1rem;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        nav .pb-btn { min-height: 2.25rem; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animate-float, .animate-bounce-in, .pb-card { animation: none; transition: none; }
+        }
+        @media (hover: none) {
+            .pb-card:hover { transform: none; }
+        }
+    </style>
+</head>
+<body class="pt-24 sm:pt-20 pb-10 px-4 md:px-8 max-w-3xl mx-auto">
+
+    <nav class="fixed top-0 left-0 w-full bg-[#FFFCF6]/95 backdrop-blur border-b z-50 px-4 py-3" style="border-bottom: 3px solid #3E3A39; padding-top: max(0.75rem, env(safe-area-inset-top));">
+        <div class="max-w-3xl mx-auto flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <a href="#hero" class="font-bold text-lg whitespace-nowrap self-start sm:self-auto">⛺️ 但以理團</a>
+            <div class="flex justify-between sm:justify-start gap-1.5 sm:gap-2">
+                <a href="#about" class="pb-btn bg-[var(--yellow)] px-2.5 sm:px-3 py-1 text-sm whitespace-nowrap">概要</a>
+                <a href="#place" class="pb-btn bg-[var(--blue)] px-2.5 sm:px-3 py-1 text-sm whitespace-nowrap">地點</a>
+                <a href="#itinerary" class="pb-btn bg-[var(--pink)] px-2.5 sm:px-3 py-1 text-sm whitespace-nowrap">行程</a>
+                <a href="#budget" class="pb-btn bg-[var(--green)] px-2.5 sm:px-3 py-1 text-sm whitespace-nowrap">費用</a>
+                <a href="#faq" class="pb-btn bg-[var(--yellow)] px-2.5 sm:px-3 py-1 text-sm whitespace-nowrap">問題</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="text-center mt-8 mb-10">
+        <div class="animate-float mb-6 inline-block">
+            <svg width="180" height="180" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="營帳插圖">
+                <circle cx="100" cy="100" r="90" fill="#A8D3E6" stroke="#3E3A39" stroke-width="4"/>
+                <circle cx="150" cy="52" r="18" fill="#F6D27A" stroke="#3E3A39" stroke-width="4"/>
+                <path d="M 28 78 Q 48 58 68 74 Q 88 60 108 78 Q 126 66 142 82 L 28 82 Z" fill="white" stroke="#3E3A39" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M 48 150 L 100 62 L 152 150 Z" fill="#F2A497" stroke="#3E3A39" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M 100 92 L 100 150" stroke="#3E3A39" stroke-width="4" stroke-linecap="round"/>
+                <path d="M 86 150 L 100 118 L 114 150 Z" fill="#F6D27A" stroke="#3E3A39" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M 18 158 Q 100 146 182 158" stroke="#B9DAA5" stroke-width="16" stroke-linecap="round" fill="none"/>
+                <path d="M 18 158 Q 100 146 182 158" stroke="#3E3A39" stroke-width="4" stroke-linecap="round" fill="none"/>
+            </svg>
+        </div>
+        <p class="mb-3"><span class="pb-tag tag-pink">1月1至3日 · 星期五至日</span></p>
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-4 border-b-4 border-[#3E3A39] inline-block pb-2 leading-tight">但以理團2027<br>新年營</h1>
+        <p class="text-lg md:text-xl font-bold mb-1 leading-snug">
+            <span class="block sm:inline">2027年1月1日（五）</span>
+            <span class="hidden sm:inline"> – </span>
+            <span class="block sm:inline">至 1月3日（日）</span>
+        </p>
+        <p class="text-base font-bold mb-6">薄扶林傷健營</p>
+
+        <div class="flex flex-wrap justify-center gap-2 mb-6">
+            <span class="pb-tag tag-yellow">宣道會基蔭堂</span>
+            <span class="pb-tag tag-blue">但以理團</span>
+            <span class="pb-tag tag-green">薄扶林</span>
+        </div>
+
+        <div class="pb-card bg-[var(--yellow)] px-4 sm:px-8 py-4 mb-6 w-full sm:w-auto sm:inline-block max-w-full">
+            <h2 class="text-lg font-bold mb-1">距離開始還有</h2>
+            <div id="countdown" class="text-2xl sm:text-4xl font-extrabold leading-tight" aria-live="polite">載入中...</div>
+            <p class="text-sm font-bold mt-1">2027年1月1日（星期五）開始。集合時間未定。</p>
+        </div>
+
+        <div>
+            <button type="button" onclick="sharePage()" class="pb-btn bg-[var(--pink)] px-6 py-2 text-lg">📤 一鍵分享此頁面</button>
+            <p id="share-msg" class="text-sm mt-2 font-bold hidden">連結已複製，可以貼給隊友了</p>
+        </div>
+    </section>
+
+    <section id="about" class="mb-12">
+        <h2 class="text-2xl font-extrabold mb-4">💛 今次係咩</h2>
+        <div class="pb-card">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="soft-box" style="background:#FDE8E3;">
+                    <h3 class="font-extrabold mb-1">日期</h3>
+                    <p>2027年1月1日至3日，星期五至日。</p>
+                </div>
+                <div class="soft-box" style="background:#E7F4FA;">
+                    <h3 class="font-extrabold mb-1">地點</h3>
+                    <p>薄扶林傷健營。</p>
+                </div>
+                <div class="soft-box" style="background:#FDF3D4;">
+                    <h3 class="font-extrabold mb-1">費用</h3>
+                    <p>待定。確認之前，呢頁唔會估一個數。</p>
+                </div>
+            </div>
+            <p class="text-sm mt-4">行程、集合時間同每人應付幾多，確認之後先寫上呢頁。</p>
+        </div>
+    </section>
+
+    <section id="place" class="mb-12">
+        <h2 class="text-2xl font-extrabold mb-4">📍 地點</h2>
+        <div class="pb-card">
+            <p class="pb-tag tag-blue mb-3">薄扶林傷健營</p>
+            <h3 class="text-xl font-bold mb-2">香港傷健協會賽馬會傷健營</h3>
+            <p class="mb-3">薄扶林水塘道 75 號。</p>
+            <p class="text-sm mb-4">營舍電話 <a class="font-bold underline" href="tel:+85225514209">2551 4209</a>。呢個係場地電話，唔係團契聯絡人。集合時間未定。</p>
+            <div class="soft-box text-sm mb-4">
+                <p class="font-extrabold mb-1">點去</p>
+                <p>港鐵香港大學站 A1 出口，轉乘往香港仔方向的巴士或小巴，喺薄扶林水塘道落車。堅尼地城站可轉小巴 23、23M。營舍沒有泊車。路線以營舍網頁為準。</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A6%99%E6%B8%AF%E5%82%B7%E5%81%A5%E5%8D%94%E6%9C%83%E8%B3%BD%E9%A6%AC%E6%9C%83%E5%82%B7%E5%81%A5%E7%87%9F" target="_blank" rel="noopener noreferrer" class="pb-btn bg-[var(--yellow)] px-4 py-2 text-center">📍 Google 地圖</a>
+                <a href="https://hkphab.org.hk/jockey-club-phab-camp-ch" target="_blank" rel="noopener noreferrer" class="pb-btn bg-[var(--blue)] px-4 py-2 text-center">🏕️ 營舍網頁</a>
+            </div>
+            <div class="overflow-hidden" style="border: 3px solid #3E3A39; border-radius: 15px;">
+                <iframe title="薄扶林傷健營地圖" width="100%" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=114.1286%2C22.2577%2C114.1446%2C22.2697&amp;layer=mapnik&amp;marker=22.2637194%2C114.1366409"></iframe>
+            </div>
+            <p class="text-xs text-center mt-2 font-bold">薄扶林水塘道 75 號（OpenStreetMap）</p>
+        </div>
+    </section>
+
+    <section id="itinerary" class="mb-12">
+        <h2 class="text-2xl font-extrabold mb-2">📅 每日行程</h2>
+        <p class="text-sm font-bold mb-2">三日的安排未定。確認之後先寫上時間同活動，呢頁唔會自己填。</p>
+
+        <div class="day-tabs flex gap-2 overflow-x-auto no-scrollbar" role="tablist" aria-label="三日行程">
+            <button type="button" onclick="openTab(event, 'day1')" class="tab-btn pb-btn bg-[var(--pink)] px-5 py-2 text-lg flex-shrink-0" id="defaultOpen" role="tab" aria-controls="day1" aria-selected="true">1/1（五）</button>
+            <button type="button" onclick="openTab(event, 'day2')" class="tab-btn pb-btn bg-[var(--yellow)] px-5 py-2 text-lg flex-shrink-0 opacity-70" role="tab" aria-controls="day2" aria-selected="false">1/2（六）</button>
+            <button type="button" onclick="openTab(event, 'day3')" class="tab-btn pb-btn bg-[var(--blue)] px-5 py-2 text-lg flex-shrink-0 opacity-70" role="tab" aria-controls="day3" aria-selected="false">1/3（日）</button>
+        </div>
+
+        <div class="pb-card">
+            <div id="day1" class="tab-content active" role="tabpanel">
+                <h3 class="text-xl font-extrabold mb-3 border-b-2 border-dashed border-[#3E3A39] pb-2">1月1日（五）</h3>
+                <p class="pb-tag tag-yellow mb-3">待定</p>
+                <p>當日安排未定。集合時間、活動同收營時間，確認之後先寫上呢度。</p>
+            </div>
+            <div id="day2" class="tab-content" role="tabpanel">
+                <h3 class="text-xl font-extrabold mb-3 border-b-2 border-dashed border-[#3E3A39] pb-2">1月2日（六）</h3>
+                <p class="pb-tag tag-yellow mb-3">待定</p>
+                <p>當日安排未定。確認之後先寫上呢度。</p>
+            </div>
+            <div id="day3" class="tab-content" role="tabpanel">
+                <h3 class="text-xl font-extrabold mb-3 border-b-2 border-dashed border-[#3E3A39] pb-2">1月3日（日）</h3>
+                <p class="pb-tag tag-yellow mb-3">待定</p>
+                <p>當日安排未定。確認之後先寫上呢度。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="budget" class="mb-12">
+        <h2 class="text-2xl font-extrabold mb-4">💰 費用</h2>
+        <div class="pb-card">
+            <div class="flex justify-between gap-3 items-center font-bold">
+                <span>每人費用</span>
+                <span class="pb-tag tag-yellow">待定</span>
+            </div>
+            <p class="text-sm mt-4">總數未有。確認之後先寫上每人應付幾多，以及邊啲係自費。呢頁唔會估一個假數字。</p>
+        </div>
+    </section>
+
+    <section id="faq" class="mb-12">
+        <h2 class="text-2xl font-extrabold mb-4">❓ 常見問題</h2>
+        <div class="pb-card space-y-4">
+            <div>
+                <h3 class="font-bold">費用幾多？</h3>
+                <p class="text-sm">待定。有數先更新呢頁。</p>
+            </div>
+            <div>
+                <h3 class="font-bold">行程出咗未？</h3>
+                <p class="text-sm">未。1月1日至3日三日的安排都未定。</p>
+            </div>
+            <div>
+                <h3 class="font-bold">幾時集合？</h3>
+                <p class="text-sm">集合時間未定。確定之後會寫上呢頁。</p>
+            </div>
+            <div>
+                <h3 class="font-bold">營喺邊？</h3>
+                <p class="text-sm">薄扶林傷健營，正式名稱係香港傷健協會賽馬會傷健營，地址薄扶林水塘道 75 號。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-8 pb-8 font-bold text-sm">
+        <p>宣道會基蔭堂但以理團 · 2027 新年營</p>
+        <p class="mt-2 text-xs font-bold">2027年1月1日至3日 · 薄扶林傷健營 · 費用待定</p>
+    </footer>
+
+    <script>
+        const startAt = new Date("2027-01-01T00:00:00+08:00").getTime();
+        const endAt = new Date("2027-01-04T00:00:00+08:00").getTime();
+        const countdownEl = document.getElementById("countdown");
+
+        function renderCountdown() {
+            const now = Date.now();
+            if (now >= endAt) {
+                countdownEl.textContent = "營會結束咗";
+                return;
+            }
+            if (now >= startAt) {
+                countdownEl.textContent = "營會進行緊";
+                return;
+            }
+            const distance = startAt - now;
+            const days = Math.floor(distance / 86400000);
+            const hours = Math.floor((distance % 86400000) / 3600000);
+            const minutes = Math.floor((distance % 3600000) / 60000);
+            countdownEl.textContent = days + " 天 " + hours + " 小時 " + minutes + " 分";
+        }
+        renderCountdown();
+        setInterval(renderCountdown, 30000);
+
+        function openTab(evt, tabName) {
+            document.querySelectorAll(".tab-content").forEach(function (panel) {
+                panel.style.display = "none";
+                panel.classList.remove("active", "animate-bounce-in");
+            });
+            document.querySelectorAll(".tab-btn").forEach(function (btn) {
+                btn.classList.remove("is-pressed");
+                btn.classList.add("opacity-70");
+                btn.setAttribute("aria-selected", "false");
+            });
+            const targetTab = document.getElementById(tabName);
+            targetTab.style.display = "block";
+            targetTab.classList.add("active");
+            void targetTab.offsetWidth;
+            targetTab.classList.add("animate-bounce-in");
+            const current = evt.currentTarget;
+            current.classList.add("is-pressed");
+            current.classList.remove("opacity-70");
+            current.setAttribute("aria-selected", "true");
+            const scroller = current.closest(".day-tabs");
+            if (scroller) {
+                const left = current.offsetLeft - (scroller.clientWidth - current.offsetWidth) / 2;
+                scroller.scrollTo({ left: Math.max(0, left), behavior: "smooth" });
+            }
+        }
+
+        function sharePage() {
+            const url = window.location.href;
+            const payload = {
+                title: "但以理團2027新年營",
+                text: "但以理團 2027年1月1日至3日新年營，薄扶林傷健營",
+                url: url
+            };
+            const showCopied = function () {
+                const msg = document.getElementById("share-msg");
+                msg.classList.remove("hidden");
+                setTimeout(function () { msg.classList.add("hidden"); }, 3000);
+            };
+            if (navigator.share) {
+                navigator.share(payload).catch(function () {});
+                return;
+            }
+            const done = function () { showCopied(); };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(done).catch(function () {
+                    fallbackCopy(url, done);
+                });
+            } else {
+                fallbackCopy(url, done);
+            }
+        }
+
+        function fallbackCopy(url, done) {
+            const input = document.createElement("textarea");
+            input.value = url;
+            document.body.appendChild(input);
+            input.select();
+            try { document.execCommand("copy"); done(); } catch (err) {}
+            document.body.removeChild(input);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            openTab({ currentTarget: document.getElementById("defaultOpen") }, "day1");
+        });
+    </script>
+</body>
+</html>

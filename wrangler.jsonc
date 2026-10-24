@@ -1,0 +1,12 @@
+{
+  "name": "daniel-2027-new-year-camp",
+  "account_id": "db0374b37171e14e52b085a4b4f0d1dc",
+  "compatibility_date": "2026-10-24",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
